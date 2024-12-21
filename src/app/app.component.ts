@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {HeaderComponent} from "./core/coponents/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+    <app-header/>
+    <router-outlet/>
   `,
+  standalone: true,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'url-shortnr-angular';
+
 }
