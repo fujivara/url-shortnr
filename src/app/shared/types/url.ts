@@ -5,3 +5,7 @@ export interface UrlInterface {
   redirects: number;
   created_at: string;
 }
+
+export interface CreateUrlPayload {
+  url: string;
+}
